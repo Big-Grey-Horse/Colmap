@@ -28,7 +28,7 @@ DEPEND="
     media-libs/glew
     dev-qt/qtbase
     dev-qt/qtopengl
-    sci-libs/onnxruntime"
+    dev-python/onnxruntime"
 
 RDEPEND="${DEPEND}"
 
