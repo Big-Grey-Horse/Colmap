@@ -3,11 +3,11 @@
 
 EAPI=8
 
-
+DIGEST_SOURCES="yes"
 PYTHON_COMPAT=( python{3_11,3_12,3_13,3_14} )
 DISTUTILS_USE_PEP517=wheel
 
-inherit python-r1 gs-pypi
+inherit python-r1
 
 DESCRIPTION="ONNX Runtime is a runtime accelerator for Machine Learning models [wheel]"
 
