@@ -28,7 +28,7 @@ DEPEND="
     media-libs/glew
     dev-qt/qtbase
     dev-qt/qtopengl
-    dev-python/onnxruntime-gpu"
+    dev-python/onnxruntime-linux-x64-gpu"
 
 RDEPEND="${DEPEND}"
 
