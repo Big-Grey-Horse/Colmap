@@ -18,7 +18,8 @@ DEPEND="
     sci-libs/ceres-solver
     dev-libs/boost
     media-libs/freeimage
-    sci-libs/metis"
+    sci-libs/metis
+    sci-libs/cholmod"
 
 RDEPEND="${DEPEND}"
 
