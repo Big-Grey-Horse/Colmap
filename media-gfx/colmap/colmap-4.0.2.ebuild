@@ -19,7 +19,8 @@ DEPEND="
     dev-libs/boost
     media-libs/freeimage
     sci-libs/metis
-    sci-libs/cholmod"
+    sci-libs/cholmod
+    sci-mathematics/cgal"
 
 RDEPEND="${DEPEND}"
 
