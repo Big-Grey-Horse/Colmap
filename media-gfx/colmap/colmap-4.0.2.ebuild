@@ -20,7 +20,15 @@ DEPEND="
     media-libs/freeimage
     sci-libs/metis
     sci-libs/cholmod
-    sci-mathematics/cgal"
+    sci-mathematics/cgal
+    dev-cpp/eigen
+    sci-libs/flann
+    media-libs/freeimage
+    dev-db/sqlite
+    media-libs/glew
+    dev-qt/qtbase
+    dev-qt/qtopengl
+    sci-libs/onnxruntime"
 
 RDEPEND="${DEPEND}"
 
