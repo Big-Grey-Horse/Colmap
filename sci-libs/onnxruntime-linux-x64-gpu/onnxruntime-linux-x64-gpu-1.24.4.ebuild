@@ -18,7 +18,7 @@ RESTRICT="bindist test"
 
 RDEPEND="
 	dev-util/nvidia-cuda-toolkit
-	dev-util/cudnn*
+	dev-util/cudnn
 "
 
 QA_PREBUILT="/lib/*"
