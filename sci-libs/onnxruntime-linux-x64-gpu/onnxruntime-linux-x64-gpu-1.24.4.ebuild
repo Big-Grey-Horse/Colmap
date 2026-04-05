@@ -41,6 +41,7 @@ src_install() {
 	dolib.so lib/*.so*
 
 	insinto $(libdir)
+	cd lib
 
 	doins -r cmake
 	doins -r pkgconfig
