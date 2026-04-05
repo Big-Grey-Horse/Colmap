@@ -38,7 +38,7 @@ src_install() {
 
 	doheader -r include
 
-	dolib.so "${S}"/lib/*.so*
+	dolib.so lib/*.so*
 
 	insinto $(libdir)
 
