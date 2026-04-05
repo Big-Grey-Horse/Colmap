@@ -33,6 +33,8 @@ src_compile() {
 
 src_install() {
 
+	cd ${S}/${P}
+
 
 	doheader -r include
 
