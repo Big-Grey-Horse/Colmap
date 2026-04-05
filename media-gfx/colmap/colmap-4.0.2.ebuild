@@ -3,16 +3,16 @@
 
 EAPI=8
 
-inherit cmake xdg-utils git-r3
+inherit cmake
 
 DESCRIPTION="A general-purpose Structure-from-Motion and Multi-View Stereo pipeline."
 HOMEPAGE="https://colmap.github.io/"
-#SRC_URI="https://github.com/colmap/colmap/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
-EGIT_REPO_URI="https://github.com/colmap/colmap.git"
+SRC_URI="https://github.com/colmap/colmap/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
+
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64"
 
 DEPEND="
     sci-libs/ceres-solver
@@ -37,6 +37,3 @@ RDEPEND="${DEPEND}"
 
 MYCMAKEARGS="-DCMAKE_CUDA_ARCHITECTURES=120"
 
-pkg_postinst() {
-    xdg_desktop_database_update
-}
