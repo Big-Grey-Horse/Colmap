@@ -33,15 +33,15 @@ src_compile() {
 
 src_install() {
 
-	cd ${S}/${P}
+	cd ${S}/${P}/include
 
 
-	doheader -r include
+	doheader -r *
 
 	dolib.so lib/*.so*
 
 	insinto /usr/$(get_libdir)
-	cd lib
+	cd ${S}/${P}/lib
 
 	doins -r cmake
 	doins -r pkgconfig
