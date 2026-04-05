@@ -15,25 +15,28 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 DEPEND="
-    sci-libs/ceres-solver
-    dev-libs/boost
-    media-libs/freeimage
-    sci-libs/metis
-    sci-libs/cholmod
-    sci-mathematics/cgal
-    dev-cpp/eigen
-    sci-libs/flann
-    media-libs/freeimage
-    dev-db/sqlite
-    media-libs/glew
-    dev-qt/qtbase
-    dev-qt/qtopengl
-    sci-libs/onnxruntime-linux-x64-gpu
-    sci-libs/poselib"
+	dev-db/sqlite
+	dev-cpp/eigen
+	dev-libs/boost
+	dev-qt/qtbase
+	dev-qt/qtopengl
+	media-libs/freeimage
+	media-libs/glew
+	media-libs/openimageio
+	sci-libs/ceres-solver
+	sci-libs/cholmod
+	sci-libs/flann
+	sci-libs/metis
+	sci-libs/onnxruntime-linux-x64-gpu
+	sci-libs/poselib
+	sci-mathematics/cgal
+"
 
 RDEPEND="${DEPEND}"
 
-#CMAKE_IN_SOURCE_BUILD=1
+PATCHES=(
+	"${FILESDIR}/${PN}-4.0.2-do not fetch dependencies.patch"
+)
 
 MYCMAKEARGS="-DCMAKE_CUDA_ARCHITECTURES=120"
 
