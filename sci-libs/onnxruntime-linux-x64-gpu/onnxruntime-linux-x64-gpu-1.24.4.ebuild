@@ -31,3 +31,20 @@ src_compile() {
 	:
 }
 
+src_install() {
+
+	cd ${S}/${P}
+
+	dolib.so lib/*.so*
+
+	mv include onnxruntime
+
+	doheader -r onnxruntime
+
+
+	insinto /usr/$(get_libdir)
+	cd lib
+
+	doins -r cmake
+	doins -r pkgconfig
+}
