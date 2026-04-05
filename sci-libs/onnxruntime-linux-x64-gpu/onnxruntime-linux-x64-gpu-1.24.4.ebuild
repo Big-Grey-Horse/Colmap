@@ -40,7 +40,7 @@ src_install() {
 
 	dolib.so lib/*.so*
 
-	insinto $(libdir)
+	insinto /usr/$(get_libdir)
 	cd lib
 
 	doins -r cmake
